@@ -25,13 +25,38 @@ app.use("/api/auth", userRoutes);
 app.use("/api/admin", adminRoutes);
 
 async function main() {
-  await mongoose.connect(process.env.DB_URL);
-  app.use("/", (req, res) => {
-    res.send("Plant Store Server is running!");
-  });
+  try {
+    const connection = await mongoose.connect(process.env.DB_URL);
+
+    // Log database names
+    const admin = connection.connection.db.admin();
+    const listDatabases = await admin.listDatabases();
+    
+    console.log("Databases:");
+    listDatabases.databases.forEach(db => {
+      console.log(`- ${db.name}`);
+    });
+
+    // Log collections in the connected database
+    const db = connection.connection.db;
+    const dbName = db.databaseName;
+    const collections = await db.listCollections().toArray();
+    
+    console.log(`Connected to database: ${dbName}`);
+    console.log("Collections in the connected database:");
+    collections.forEach(collection => {
+      console.log(`- ${collection.name}`);
+    });
+
+    app.use("/", (req, res) => {
+      res.send("Plant Store Server is running!");
+    });
+  } catch (err) {
+    console.error("Error connecting to MongoDB:", err);
+  }
 }
 
-main().then(() => console.log("Mongodb connect successfully!")).catch(err => console.log(err));
+main();
 
 app.listen(port, () => {
   console.log(`Plant Store app listening on port ${port}`);
