@@ -14,7 +14,7 @@
         "temperature": "Average (18-24°C / 65-75°F)",
         "humidity": "High (60%+)"
       },
-      "coverImage": "Swiss Cheese Plant",
+      "coverImage": "Monstera Deliciosa.jpeg",
       "sunExposure": "Partial Sun (3-6 hours direct)",
       "plantSize": "Large (100cm+/3ft+)",
       "poisonous": true,
@@ -49,8 +49,7 @@
         "temperature": "Average (18-24°C / 65-75°F)",
         "humidity": "Medium (40-60%)"
       },
-      "coverImage": "Chinese Money Plant.jpg",
-      "dateAdded": "2024-01-22T08:00:00.000Z",
+      "coverImage": "Chinese Money Plant.jpeg",
       "sunExposure": "Partial Sun (3-6 hours direct)",
       "plantSize": "Small (Up to 30cm/12\")",
       "poisonous": false,
@@ -85,8 +84,7 @@
         "temperature": "Average (18-24°C / 65-75°F)",
         "humidity": "Low (30-40%)"
       },
-      "coverImage": "Snake Plant Laurentii.jpg",
-      "dateAdded": "2024-01-21T08:00:00.000Z",
+      "coverImage": "Snake Plant Laurentii.jpeg",
       "sunExposure": "Full Sun (6+ hours direct)",
       "plantSize": "Medium (30-100cm/1-3ft)",
       "poisonous": true,
@@ -122,7 +120,6 @@
         "humidity": "Medium (40-60%)"
       },
       "coverImage": "Fresh Mint.jpg",
-      "dateAdded": "2024-01-25T08:00:00.000Z",
       "sunExposure": "Partial Sun (3-6 hours direct)",
       "plantSize": "Small (Up to 30cm/12\")",
       "poisonous": false,
@@ -158,7 +155,6 @@
         "humidity": "Medium (40-60%)"
       },
       "coverImage": "Coriander.jpg",
-      "dateAdded": "2024-01-26T08:00:00.000Z",
       "sunExposure": "Full Sun (6+ hours direct)",
       "plantSize": "Small (Up to 30cm/12\")",
       "poisonous": false,
@@ -176,6 +172,273 @@
         "fast growing",
         "fresh leaves",
         "cooking essential"
+      ]
+    },
+    {
+      "name": "Oyster Mushroom Kit",
+      "scientificName": "Pleurotus ostreatus",
+      "description": "The Oyster Mushroom growing kit offers an exciting way to grow your own gourmet mushrooms at home. These beautiful, fan-shaped mushrooms are known for their delicate texture and mild, seafood-like flavor. The kit comes complete with colonized substrate and simple instructions for multiple harvests. Perfect for culinary enthusiasts and those interested in indoor food cultivation.",
+      "price": 29.99,
+      "oldPrice": 34.99,
+      "stock": 20,
+      "category": "Herbs & Vegetables",
+      "careInstructions": {
+        "light": "Low Light (Shade)",
+        "water": "Frequent (2-3 Times Weekly)",
+        "temperature": "Cool (15-18°C / 60-65°F)",
+        "humidity": "High (60%+)"
+      },
+      "coverImage": "Oyster Mushroom Kit.jpg",
+      "sunExposure": "Shade (minimal direct sun)",
+      "plantSize": "Small (Up to 30cm/12\")",
+      "poisonous": false,
+      "trending": true,
+      "features": [
+        "Edible"
+      ],
+      "maintenanceLevel": "Moderate",
+      "growthRate": "Fast",
+      "bloomingSeason": "Year-round",
+      "status": "In Stock",
+      "tags": [
+        "mushroom",
+        "edible",
+        "indoor growing",
+        "gourmet",
+        "sustainable"
+      ]
+    },
+    {
+      "name": "Lavender",
+      "scientificName": "Lavandula angustifolia",
+      "description": "Lavender is a beautifully fragrant herb that produces purple-blue flower spikes. Perfect for gardens and containers, it attracts pollinators and can be used for both ornamental and culinary purposes.",
+      "price": 15.99,
+      "oldPrice": null,
+      "stock": 75,
+      "category": "Herbs & Vegetables",
+      "careInstructions": {
+        "light": "Bright Light (Direct Sun)",
+        "water": "Moderate (Water Weekly)",
+        "temperature": "Average (18-24°C / 65-75°F)",
+        "humidity": "Low (30-40%)"
+      },
+      "coverImage": "Lavender.jpg",
+      "sunExposure": "Full Sun (6+ hours direct)",
+      "plantSize": "Small (Up to 30cm/12\")",
+      "poisonous": false,
+      "trending": false,
+      "features": [
+        "Aromatic",
+        "Bee Friendly"
+      ],
+      "maintenanceLevel": "Moderate",
+      "growthRate": "Medium",
+      "bloomingSeason": "Summer",
+      "status": "In Stock",
+      "tags": [
+        "herb", 
+        "fragrant", 
+        "pollinator friendly", 
+        "mediterranean"
+      ]
+    },
+    {
+      "name": "Echeveria Elegans",
+      "scientificName": "Echeveria elegans",
+      "description": "Echeveria Elegans, also known as Mexican Snowball, is a beautiful rosette-forming succulent with pale blue-green leaves. Its compact size and drought tolerance make it perfect for rock gardens and containers.",
+      "price": 12.99,
+      "oldPrice": null,
+      "stock": 100,
+      "category": "Succulents & Cacti",
+      "careInstructions": {
+        "light": "Bright Light (Direct Sun)",
+        "water": "Low (Keep Soil Dry)",
+        "temperature": "Average (18-24°C / 65-75°F)",
+        "humidity": "Low (30-40%)"
+      },
+      "coverImage": "Echeveria Elegans.jpg",
+      "sunExposure": "Full Sun (6+ hours direct)",
+      "plantSize": "Small (Up to 30cm/12\")",
+      "poisonous": false,
+      "trending": false,
+      "features": [
+        "Drought Resistant"
+      ],
+      "maintenanceLevel": "Easy",
+      "growthRate": "Slow",
+      "bloomingSeason": "Spring",
+      "status": "In Stock",
+      "tags": [
+        "succulent", 
+        "rosette", 
+        "drought tolerant", 
+        "container plant"
+      ]
+    },
+    {
+      "name": "Japanese Maple",
+      "scientificName": "Acer palmatum",
+      "description": "Japanese Maple is a stunning ornamental tree known for its delicate, lacy foliage that changes color throughout the seasons. Perfect as a focal point in gardens, it provides year-round interest with its architectural form.",
+      "price": 149.99,
+      "oldPrice": 179.99,
+      "stock": 8,
+      "category": "Trees & Shrubs",
+      "careInstructions": {
+        "light": "Medium Light (Indirect Sun)",
+        "water": "Moderate (Water Weekly)",
+        "temperature": "Cool (15-18°C / 60-65°F)",
+        "humidity": "Medium (40-60%)"
+      },
+      "coverImage": "Japanese Maple.jpg",
+      "sunExposure": "Partial Sun (3-6 hours direct)",
+      "plantSize": "Large (100cm+/3ft+)",
+      "poisonous": false,
+      "trending": false,
+      "features": [],
+      "maintenanceLevel": "Expert",
+      "growthRate": "Medium",
+      "bloomingSeason": "Spring",
+      "status": "Low Stock",
+      "tags": [
+        "tree", 
+        "ornamental", 
+        "fall color", 
+        "shade garden"
+      ]
+    },
+    {
+      "name": "Wax Plant",
+      "scientificName": "Hoya carnosa",
+      "description": "Hoya carnosa, commonly known as Wax Plant or Porcelain Flower, is a popular trailing houseplant known for its thick, waxy leaves and clusters of star-shaped, fragrant flowers. This slow-growing vine produces beautiful pink-white umbels of flowers that have a sweet, honey-like fragrance. Native to Eastern Asia and Australia, it makes an excellent hanging basket specimen or can be trained to grow on a trellis.",
+      "price": 24.99,
+      "oldPrice": 29.99,
+      "stock": 45,
+      "category": "Indoor Plants",
+      "careInstructions": {
+        "light": "Medium Light (Indirect Sun)",
+        "water": "Moderate (Water Weekly)",
+        "temperature": "Average (18-24°C / 65-75°F)",
+        "humidity": "Medium (40-60%)"
+      },
+      "coverImage": "Wax Plant.jpg",
+      "sunExposure": "Partial Sun (3-6 hours direct)",
+      "plantSize": "Medium (30-100cm/1-3ft)",
+      "poisonous": false,
+      "trending": true,
+      "features": [
+        "Air Purifying",
+        "Drought Resistant"
+      ],
+      "maintenanceLevel": "Moderate",
+      "growthRate": "Slow",
+      "bloomingSeason": "Summer",
+      "status": "In Stock",
+      "tags": [
+        "hoya",
+        "wax plant",
+        "porcelain flower",
+        "trailing plant",
+        "flowering plant"
+      ]
+    },
+    {
+      "name": "Bird's Nest Fern",
+      "scientificName": "Asplenium nidus",
+      "description": "The Bird's Nest Fern is a striking tropical plant characterized by its wavy, bright green fronds that emerge from a central rosette, resembling a bird's nest. Unlike other ferns, its leaves are whole rather than divided, creating a unique architectural statement. This easy-care plant thrives in humid environments, making it perfect for bathrooms or kitchens. Its distinctive rippled edges and glossy texture add a sophisticated touch to any indoor space.",
+      "price": 32.99,
+      "oldPrice": 39.99,
+      "stock": 35,
+      "category": "Indoor Plants",
+      "careInstructions": {
+        "light": "Medium Light (Indirect Sun)",
+        "water": "Moderate (Water Weekly)",
+        "temperature": "Average (18-24°C / 65-75°F)",
+        "humidity": "High (60%+)"
+      },
+      "coverImage": "Bird's Nest Fern.png",
+      "sunExposure": "Partial Sun (3-6 hours direct)",
+      "plantSize": "Medium (30-100cm/1-3ft)",
+      "poisonous": false,
+      "trending": true,
+      "features": [
+        "Air Purifying",
+        "Pet Friendly"
+      ],
+      "maintenanceLevel": "Easy",
+      "growthRate": "Medium",
+      "bloomingSeason": "Non-flowering",
+      "status": "In Stock",
+      "tags": [
+        "fern",
+        "tropical",
+        "humidity loving",
+        "bathroom plant"
+      ]
+    },
+    {
+      "name": "String of Pearls",
+      "scientificName": "Senecio rowleyanus",
+      "description": "String of Pearls is a fascinating succulent with cascading stems covered in small, round leaves that resemble a string of green pearls. This unique trailing plant is perfect for hanging baskets or high shelves where its delicate strands can cascade down. When in bloom, it produces tiny white flowers with a sweet cinnamon scent. Its unusual appearance makes it a conversation starter and adds intrigue to any plant collection.",
+      "price": 19.99,
+      "oldPrice": 24.99,
+      "stock": 25,
+      "category": "Succulents & Cacti",
+      "careInstructions": {
+        "light": "Bright Light (Direct Sun)",
+        "water": "Low (Keep Soil Dry)",
+        "temperature": "Average (18-24°C / 65-75°F)",
+        "humidity": "Low (30-40%)"
+      },
+      "coverImage": "string-of-pearls-cover.jpg",
+      "dateAdded": "2024-03-05T09:15:00.000Z",
+      "sunExposure": "Full Sun (6+ hours direct)",
+      "plantSize": "Small (Up to 30cm/12\")",
+      "poisonous": true,
+      "trending": true,
+      "features": [
+        "Drought Resistant"
+      ],
+      "maintenanceLevel": "Moderate",
+      "growthRate": "Fast",
+      "bloomingSeason": "Summer",
+      "status": "In Stock",
+      "tags": [
+        "succulent",
+        "trailing plant",
+        "hanging plant"
+      ]
+    },
+    {
+      "name": "Peacock Plant",
+      "scientificName": "Calathea makoyana",
+      "description": "The Peacock Plant, with its stunning oval leaves marked with intricate patterns resembling peacock feathers, is a true botanical masterpiece. Each leaf displays a mesmerizing combination of light and dark green patterns on the top, while the undersides reveal a rich purple hue. This tropical beauty is also known for its nyctinastic movements - its leaves fold up at night and unfurl in the morning, earning it a place among 'prayer plants'. While it requires specific care conditions, its extraordinary beauty makes it worth the extra attention.",
+      "price": 45.99,
+      "oldPrice": 54.99,
+      "stock": 15,
+      "category": "Indoor Plants",
+      "careInstructions": {
+        "light": "Medium Light (Indirect Sun)",
+        "water": "Frequent (2-3 Times Weekly)",
+        "temperature": "Warm (24-29°C / 75-85°F)",
+        "humidity": "High (60%+)"
+      },
+      "coverImage": "peacock-plant.jpg",
+      "sunExposure": "Shade (minimal direct sun)",
+      "plantSize": "Medium (30-100cm/1-3ft)",
+      "poisonous": false,
+      "trending": false,
+      "features": [
+        "Pet Friendly"
+      ],
+      "maintenanceLevel": "Expert",
+      "growthRate": "Medium",
+      "bloomingSeason": "Non-flowering",
+      "status": "Low Stock",
+      "tags": [
+        "calathea",
+        "prayer plant",
+        "tropical",
+        "patterned leaves"
       ]
     }
   ]

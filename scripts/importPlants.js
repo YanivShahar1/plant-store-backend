@@ -26,12 +26,17 @@ mongoose.connect(process.env.DB_URL, { useNewUrlParser: true, useUnifiedTopology
 
       // Insert plants into MongoDB
       try {
-        // Insert data into the 'plants' collection
-        await Plant.insertMany(plants);
-        console.log('Data has been successfully inserted into the database');
+        const result = await Plant.insertMany(plants, { 
+          ordered: false, // Continue inserting even if some documents fail
+          rawResult: true // Provides more detailed information about the insertion
+        });
+        
+        console.log('Successfully inserted:', result.insertedCount);
+        console.log('Failed documents:', result.writeErrors);
+        
         mongoose.disconnect();
       } catch (error) {
-        console.error('Error inserting data into MongoDB:', error);
+        console.error('Detailed Error:', JSON.stringify(error, null, 2));
         mongoose.disconnect();
       }
     });
