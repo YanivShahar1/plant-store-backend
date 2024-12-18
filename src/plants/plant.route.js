@@ -1,23 +1,29 @@
+// plant.route.js
 const express = require('express');
-const Plant = require('./plant.model');
-const { postAPlant, getAllPlants, getSinglePlant, updatePlant, deleteAPlant } = require('./plant.controller');
+const plantController = require('./plant.controller');
+const { validatePlantData } = require('../middleware/validation');
 const verifyAdminToken = require('../middleware/verifyAdminToken');
+const asyncHandler = require('../middleware/asyncHandler');
 const router = express.Router();
 
+router.route('/')
+  .get(asyncHandler(plantController.getAllPlants))
+  .post(
+    verifyAdminToken, 
+    validatePlantData,
+    asyncHandler(plantController.postAPlant)
+  );
 
-// Post a plant
-router.post("/create-plant", verifyAdminToken, postAPlant);
-
-// Get all plants
-router.get("/", getAllPlants);
-
-// Get a single plant
-router.get("/:id", getSinglePlant);
-
-// Update a plant
-router.put("/edit/:id", verifyAdminToken, updatePlant);
-
-// Delete a plant
-router.delete("/:id", verifyAdminToken, deleteAPlant);
+router.route('/:id')
+  .get(asyncHandler(plantController.getSinglePlant))
+  .put(
+    verifyAdminToken,
+    validatePlantData, 
+    asyncHandler(plantController.updatePlant)
+  )
+  .delete(
+    verifyAdminToken,
+    asyncHandler(plantController.deleteAPlant)
+  );
 
 module.exports = router;
