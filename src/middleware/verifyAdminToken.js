@@ -1,23 +1,32 @@
+// middleware/verifyAdminToken.js
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = process.env.JWT_SECRET_KEY
+const createError = require('http-errors');
 
-const verifyAdminToken =  (req, res, next) => {
-    const token = req.headers['authorization']?.split(' ')[1];
-
-    // console.log(token)
-    
-
-    if (!token) {
-        return res.status(401).json({ message: 'Access Denied. No token provided' });
+const verifyAdminToken = async (req, res, next) => {
+  try {
+    const authHeader = req.headers.authorization;
+    if (!authHeader?.startsWith('Bearer ')) {
+      throw createError(401, 'Access Denied. No token provided');
     }
-    jwt.verify(token, JWT_SECRET, (err, user) => {
-        if (err) {
-            return res.status(403).json({ message: 'Invalid credientials' });
-        }
-        req.user = user;
-        next();
-    })
 
-}
+    const token = authHeader.split(' ')[1];
+    const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
+    
+    if (!decoded.isAdmin) {
+      throw createError(403, 'Admin access required');
+    }
+
+    req.user = decoded;
+    next();
+  } catch (error) {
+    if (error.name === 'JsonWebTokenError') {
+      next(createError(403, 'Invalid token'));
+    } else if (error.name === 'TokenExpiredError') {
+      next(createError(401, 'Token expired'));
+    } else {
+      next(error);
+    }
+  }
+};
 
 module.exports = verifyAdminToken;
