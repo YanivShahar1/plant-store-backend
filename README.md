@@ -192,7 +192,8 @@ npm run lint
 Required variables:
 ```env
 PORT=5000                  # Server port
-MONGODB_URI=              # MongoDB connection URL
+DB_URI=                   # MongoDB production connection URL
+DB_TEST_URI=              # MongoDB testing database URL for running tests
 JWT_SECRET_KEY=           # JWT secret key
 ```
 
